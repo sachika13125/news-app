@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import styled from 'styled-components';
+import iconImage from '../assets/icons8-university-16.png';
 
 function Navbar() {
 
