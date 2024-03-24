@@ -75,7 +75,7 @@ export default function Home() {
         <Home>
             <div className='wellcome'>
                 <div className='message'>
-                    <a href='/newsfeeds'>For Our Students</a>
+                    <a href='/newsfeeds'>Let's Check the Recent News Here</a>
                 </div>
             </div>
         </Home>
