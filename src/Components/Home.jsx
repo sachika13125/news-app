@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import mediaGif from '../assets/bubble-gum-social-media.gif';
+import heartGif from '../assets/bubble-gum-woman-shoots-an-arrow-with-a-heart-from-a-bow.gif';
 
 export default function Home() {
     const Home = styled.div`
@@ -77,6 +79,8 @@ export default function Home() {
                 <div className='message'>
                     <a href='/newsfeeds'>Let's Check the Recent News Here</a>
                 </div>
+                <img className='woman' src={heartGif} alt='woman shoots an arrow with a heart from a bow' />
+                <img className='media' src={mediaGif} alt='social media'/>
             </div>
         </Home>
     )
