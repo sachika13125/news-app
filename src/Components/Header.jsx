@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import styled from 'styled-components';
-import iconImage from '../assets/icons8-university-16.png';
+import iconImage from '../assets/icons8-newspaper-48.png';
 
 function Navbar() {
 
@@ -8,13 +8,14 @@ function Navbar() {
     display: flex;
     justyfy-content: space-between;
     align-items: center;
+    height: 4rem;
     background-color: #fffffe
     position: sticky;
     top: 0
     
     ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-item: center;
         list-style: none;
     }
