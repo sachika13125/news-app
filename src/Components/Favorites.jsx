@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './Favorites.css';
+import './Favorites.css';
 import favoriteImage from '../assets/bubble-gum-woman-dancing-with-a-heart-shaped-balloon.png';
 
 class Favorites extends Component {

@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from'./Components/Home';
 import NewsFeed from './Components/NeesFeed';
+import Favorites from './Components/Favorites';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Home />
         <NewsFeed />
+        <Favorites />
       </main>
       <Footer />
     </div>
