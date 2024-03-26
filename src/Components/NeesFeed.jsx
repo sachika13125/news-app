@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './NewsFeed.css';
+import './NewsFeed.css';
 import reporterImage from '../assets/bubble-gum-tv-reporter.png';
 import ideaImage from '../assets/bubble-gum-man-came-up-with-an-idea.png';
 
