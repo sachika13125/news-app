@@ -1,0 +1,130 @@
+.news-feed {
+    min-height: 100vh;
+    background-color: #d8eefe;
+    background-image: radial-gradient(#90b4ce 2px, #ffffff 2px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    z-index: -1;
+    padding: 2rem auto;
+    padding-bottom: 2rem;
+}
+
+/* Title */
+h1 {
+    color: #094067;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* Search Bar */
+.searchbar {
+    text-align: center;
+    margin: 2rem;
+}
+
+input[type="text"] {
+    background-color: #fffffe;
+    border: 1px solid #094067;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: .5rem;
+    width: 40%;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #094067;
+    border-radius: 4px;
+    outline: none;
+    color: #094067;
+}
+
+.searchbar button {
+    margin-left: .5rem;
+    padding: .5rem;
+    width: 70px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #fffffe;
+    color: #094067;
+}
+
+#search-btn {
+    background-color: #094067;
+    color: #fffffe;
+    font-weight: 700;
+}
+
+/* Article */
+.news-feed ul {
+    margin: 2rem 5rem;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.news-feed li {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: 70%;
+    border: 2px solid #fffffe;
+    border-radius: 4px;
+    background-color: #fffffe;
+}
+
+/* .news-feed li:last-child {
+    margin-bottom: 0;
+} */
+
+.news-feed h3 {
+    color: #094067;
+    padding-bottom: .5rem;
+}
+
+.news-feed p {
+    color: #5f6c7b;
+    padding-bottom: 1rem;
+}
+
+.news-feed a {
+    text-decoration: none;
+    color: #094067;
+}
+
+.news-feed a:hover {
+    text-decoration: underline;
+}
+
+#favorite {
+    float: right;
+    padding: .3rem;
+    width: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 1px solid #ef4565;
+    border-radius: 4px;
+    background-color: #fffffe;
+    color: #ef4565;
+}
+
+#favorite:hover {
+    background-color: #ef4565;
+    color: #fffffe;
+    transition: .5s;
+}
+
+/* Image */
+.reporter {
+    position: fixed;
+    top: 15%;
+    left: 3%;
+    width: 15vw;
+}
+
+.idea {
+    position: fixed;
+    top: 75%;
+    right: 3%;
+    width: 15vw;
+}
