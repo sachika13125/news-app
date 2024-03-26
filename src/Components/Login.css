@@ -1,0 +1,68 @@
+.login-page {
+    min-height: 100vh;
+    background-color: #d8eefe;
+    background-image: radial-gradient(#90b4ce 2px, #ffffff 2px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    z-index: -1;
+    padding: 2rem auto;
+    padding-bottom: 2rem;}
+
+.login-form {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: max-content;
+    height: 200px;
+    border: 2px solid #fffffe;
+    border-radius: 4px;
+    background-color: #fffffe;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form label {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.login-form input {
+    border: 1px solid #094067;
+    border-radius: 4px;
+    padding: 0.3rem;
+    width: 100%;
+}
+
+.login-form input:focus {
+    border: 2px solid #094067;
+    outline: none;
+}
+
+.login-form button {
+    margin: 1rem auto;
+    padding: .5rem;
+    float: right;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #094067;
+    color: #fffffe;
+    font-weight: 700;
+}
+
+/* image */
+.phone {
+    position: fixed;
+    top: 20%;
+    left: 68%;
+    width: 15vw;
+}
+
+.boy {
+    position: fixed;
+    top: 55%;
+    left: 15%;
+    width: 15vw;
+}
