@@ -1,0 +1,72 @@
+.favorites {
+    min-height: 100vh;
+    background-image: radial-gradient(#ef4565 2px, transparent 2px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    z-index: -1;
+    padding: 2rem auto;
+    padding-bottom: 2rem;
+}
+
+.favorites ul {
+    margin: 2rem auto;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    padding: 0 8rem;
+}
+
+.favorites li {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: 65%;
+    border: 2px solid #fffffe;
+    border-radius: 4px;
+    background-color: #fffffe;
+}
+
+.favorites h3 {
+    color: #094067;
+    padding-bottom: .5rem;
+}
+
+.favorites p {
+    color: #5f6c7b;
+    padding-bottom: 1rem;
+}
+
+.favorites a {
+    text-decoration: none;
+    color: #094067;
+}
+
+.favorites a:hover {
+    text-decoration: underline;
+}
+
+.favorites button {
+    float: right;
+    padding: .5rem;
+    width: 70px;
+    font-size: .8rem;
+    cursor: pointer;
+    border: 1px solid #094067;
+    border-radius: 4px;
+    background-color: #fffffe;
+    color: #094067;
+}
+
+.favorites button:hover {
+    background-color: #094067;
+    color: #fffffe;
+    transition: .5s;
+}
+
+/* image */
+.favoriteImg {
+    position: fixed;
+    top: 10%;
+    right: 3%;
+    width: 13vw;
+}
