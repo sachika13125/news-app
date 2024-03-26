@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from'./Components/Home';
+import NewsFeed from './Components/NeesFeed';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <main>
         <Home />
+        <NewsFeed />
       </main>
       <Footer />
     </div>
