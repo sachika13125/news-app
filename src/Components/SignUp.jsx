@@ -1,44 +1,48 @@
 import React, { useState } from 'react';
+import { createClient } from '@supabase/supabase-js';
+import './Login.css';
 
-function SignUp() {
-  const [username, setUsername] = useState('');
+const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignUp = () => {
-    const userData = {
-        username,
-        password
-    };
+  const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+  const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
+  const supabase = createClient(supabaseUrl, supabaseKey);
 
-    //Send a sign in request to server
-    fetch('/api/signup', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(userData),
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Sign up failed');
-        }
-        console.log('Sign up successful');
-    })
-    .catch.error('Sign up error', error);
+  const handleSignUp = async () => {
+    try {
+      const { user, error } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      console.log('Sign Up Successful:', user);
+    } catch (error) {
+      console.error('Sign Up Error:', error.message);
+    }
   };
 
   return (
-    <div>
-      <h2>Sign Up</h2>
-      <form onSubmit={handleSignUp}>
-        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Username" />
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
-        <button type="submit">Sign Up</button>
-      </form>
+    <div className='login-page'>
+        <h1>Sign Up</h1>
+        <div className='login-form'>
+            <label>User Name:
+                <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' />
+            </label>
+            <br />
+            <label>Password:
+                <input type='password' value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Password' />
+            </label>
+            <br />
+            <button onClick={handleSignUp}>Sign Up</button>
+        </div>
     </div>
   );
-}
+};
 
 export default SignUp;
