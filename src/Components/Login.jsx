@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
+// import { useHistory } from 'react-router-dom';
 import './Login.css';
 import loginGif from '../assets/bubble-gum-pink-phone-and-circle-with-check-mark-inside.gif';
 import boyGif from '../assets/bubble-gum-support.gif';
@@ -8,6 +9,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  // const history = useHistory();
 
   const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
   const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
@@ -28,6 +30,7 @@ const Login = () => {
     } catch (error) {
       console.error('Login Error:', error.message);
       setError('Invalid Email or Password');
+      // history.push('/signup');
     }
   };
 
