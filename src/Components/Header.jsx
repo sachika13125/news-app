@@ -6,38 +6,42 @@ function Navbar() {
 
     const Header = styled.header`
     display: flex;
-    justyfy-content: space-between;
-    align-items: center;
-    height: 4rem;
-    background-color: #fffffe
-    position: sticky;
-    top: 0
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        background-color: #fffffe;
+        position: sticky;
+        top: 0;
     
     ul {
         display: flex;
         justify-content: space-between;
         align-item: center;
-        list-style: none;
+        list-style-type: none;
+        padding:0;
     }
     
     li {
-        padding: 2rem;
+        padding: 1.5rem;
         cursor: pointer;
         transition: .4s;
+        display: flex;
+        align-items: center;
     }
 
     li:hover {
-        // background-color: #d8eefe;
-        height: 100%;
+        background-color: #d8eefe;
+        // height: 100%;
     }
 
     a {
         display: block;
-        height: 100%;
+        // height: 100%;
         text-decoration: none;
         color: #094067;
         font-size: 1.2rem;
         font-weight: 600;
+        width: 100%;
     }
 
     a:hover {
@@ -63,7 +67,7 @@ function Navbar() {
             position: absolute;
             top: 4rem;
             background-color: #fffffe; 
-            width: 100%;
+            width: 50%;
             z-index: 1; 
         }
 
@@ -106,14 +110,17 @@ function Navbar() {
             <nav>
                 <ul>
                     <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li>
                         <a href='/newsfeeds'>Feeds</a>
                     </li>
                     <li>
                         <a href='/favorites'>Favorites</a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href='/login'>LogIn</a>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
             <button onClick={toggleMobileMenu}>☰</button>
